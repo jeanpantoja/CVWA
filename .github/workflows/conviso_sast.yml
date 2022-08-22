@@ -20,5 +20,8 @@ jobs:
    - name: Run SAST
      run: conviso sast run
 
+   - name: Run SCA
+     run: conviso sca run
+
    - name: Run Sec Gate
      run: conviso vulnerability assert-security-rules --rules-file conviso-sec-gate-rules.yml
